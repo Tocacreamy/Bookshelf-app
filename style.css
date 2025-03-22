@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --primarycolor: #03001c;
+  --colorsecondary: #0e0e30;
+  --secondarycolor: #979dc0;
+  --whitecolor: #ffffff;
+  --buttoncolorgreen: #00be0a;
+  --buttoncolorred: #ec2c4c;
+  --buttoncolorblue: #0b60ff;
+  --yellowcolor: #ffa600;
+}
+
+@keyframes popupShow {
+  0% {
+    transform: translate(0px, 30px);
+    opacity: 0%;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    opacity: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Quicksand";
+  font-style: normal;
+}
+
+body {
+  background-color: var(--primarycolor);
+}
+
+header {
+  color: var(--whitecolor);
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  background-color: var(--colorsecondary);
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+main {
+  padding-top: 100px;
+  color: #000000;
+  background-color: var(--primarycolor);
+  height: 100svh;
+  margin: auto;
+  max-width: 1000px;
+  min-width: none;
+  width: 90%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 5px;
+}
+
+.sectionPart {
+  background-color: var(--colorsecondary);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  height: fit-content;
+  padding-bottom: 30px;
+}
+
+.sectionHeader {
+  background-color: #03001c;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 15px;
+  color: #58509e;
+}
+
+#searchBookTitle {
+  margin: 0px 10px;
+  width: 100%;
+}
+
+#searchBookResult {
+  background-color: var(--colorsecondary);
+  border-radius: 5px;
+  grid-column: span 2;
+  grid-row: span 1;
+  display: none;
+  justify-content: flex-end;
+  gap: 20px;
+  padding:  20px;
+
+}
+
+.searchHeader {
+  color: var(--secondarycolor);
+  width: 100%;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: var(--buttoncolorblue);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 100ms ease-in-out;
+}
+
+.buttonContainer {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.approvalButtonContainer {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redButton {
+  border: solid var(--buttoncolorred) 1px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--buttoncolorred);
+}
+
+.blueButton {
+  border: solid var(--buttoncolorblue) 1px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--buttoncolorblue);
+}
+
+.yellowButton {
+  border: solid var(--yellowcolor) 1px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--yellowcolor);
+}
+
+.greenButton {
+  border: solid var(--buttoncolorgreen) 1px;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--buttoncolorgreen);
+}
+
+.redButton:hover {
+  background-color: var(--buttoncolorred);
+  color: var(--whitecolor);
+}
+
+.greenButton:hover {
+  background-color: var(--buttoncolorgreen);
+  color: var(--whitecolor);
+}
+
+.blueButton:hover {
+  background-color: var(--buttoncolorblue);
+  color: var(--whitecolor);
+}
+
+.yellowButton:hover {
+  background-color: var(--yellowcolor);
+  color: var(--whitecolor);
+}
+
+label {
+  width: 50%;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 10px;
+  margin: auto;
+}
+
+.formPart {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.bookCard {
+  background-color: #1a1546;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+#messageAlert {
+  width: auto;
+  height: auto;
+  background-color: var(--buttoncolorblue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  color: white;
+  animation: popupShow 300ms;
+}
+
+.containerPopUp {
+  width: 100%;
+  height: 100%;
+  background-color: #000000c7;
+  position: fixed;
+  animation: popupShow 300ms;
+  z-index: 1;
+}
+
+.hideElement {
+  display: none;
+}
+
+.PopUp {
+  background-color: var(--colorsecondary);
+  margin: auto;
+  max-width: 500px;
+  width: 80%;
+  height: auto;
+  padding: 20px 20px 50px 20px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30vh;
+  text-align: center;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--secondarycolor);
+  font-style: italic;
+  opacity: 40%;
+}
+
+#cancelSearch{
+    position: absolute;
+}
+
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 600px;
+    height: fit-content;
+  }
+  /* #bookFormSection {
+    grid-area: 1/1/span 2/span 2;
+  } */
+
+  #searchBookResult {
+    grid-column: span 1;
+  }
+
+  .sectionPart {
+    margin: 10px;
+  }
+}
