@@ -1,7 +1,3 @@
-# Bookshelf-app
-
-=======
-
 # 📚 Bookshelf App
 
 Bookshelf App adalah aplikasi berbasis web sederhana untuk mengelola daftar buku yang sedang dibaca dan sudah selesai dibaca. Aplikasi ini dibuat menggunakan **HTML, CSS, dan JavaScript** serta menyimpan data secara **local storage** di browser.
