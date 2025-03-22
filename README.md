@@ -1,11 +1,13 @@
-<<<<<<< HEAD
 # Bookshelf-app
+
 =======
+
 # 📚 Bookshelf App
 
 Bookshelf App adalah aplikasi berbasis web sederhana untuk mengelola daftar buku yang sedang dibaca dan sudah selesai dibaca. Aplikasi ini dibuat menggunakan **HTML, CSS, dan JavaScript** serta menyimpan data secara **local storage** di browser.
 
 ## ✨ Fitur
+
 - 📖 Menambahkan buku dengan **judul, penulis, dan tahun terbit**.
 - ✅ Menandai buku sebagai **"Selesai Dibaca" atau "Belum Selesai Dibaca"**.
 - ✏️ **Mengedit** informasi buku yang sudah ditambahkan.
@@ -13,12 +15,14 @@ Bookshelf App adalah aplikasi berbasis web sederhana untuk mengelola daftar buku
 - 🔍 **Mencari** buku berdasarkan judul.
 
 ## 🛠 Teknologi yang Digunakan
+
 - **HTML** - Struktur halaman.
 - **CSS** - Styling untuk tampilan yang lebih menarik.
 - **JavaScript** - Logika aplikasi.
 - **Local Storage** - Penyimpanan data secara lokal di browser.
 
 ## 📂 Struktur Proyek
+
 📦 bookshelf-app
 ┣ 📜 index.html # Halaman utama
 ┣ 📜 style.css # Styling aplikasi
@@ -30,10 +34,12 @@ Copy
 Edit
 
 ## 🚀 Cara Menjalankan
+
 1. Clone repository ini ke komputer kamu:
    ```bash
    git clone https://github.com/username/bookshelf-app.git
-Buka folder proyek:
+   Buka folder proyek:
+   ```
 
 bash
 Copy
@@ -57,4 +63,3 @@ Jika kamu ingin berkontribusi, silakan fork repository ini dan buat pull request
 
 📜 Lisensi
 Proyek ini menggunakan lisensi MIT. Silakan gunakan dan modifikasi sesuai kebutuhan.
->>>>>>> 94fbfff (first up �)
